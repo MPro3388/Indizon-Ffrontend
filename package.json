@@ -1,28 +1,39 @@
 {
-  "name": "wt-exercises",
-  "version": "1.0.0",
-  "description": "This is my first frontend",
-  "main": "index.js",
+  "name": "indizon-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+  "node": "16.x",
+  "npm": "8.x"
+},
   "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MPro3388/WT-Exercises.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MPro3388/WT-Exercises/issues"
-  },
-  "homepage": "https://github.com/MPro3388/WT-Exercises#readme",
-  "devDependencies": {
-    "jest": "^27.3.1"
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "babel-core": "^7.0.0-beta.3",
-    "babel-jest": "^27.0.0-next.8",
-    "babel-preset-env": "^7.0.0-beta.3",
-    "jest": "^27.0.0-next.8"
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/test-utils": "^2.0.0-0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^7.0.0",
+    "typescript": "~3.9.3",
+    "vue-jest": "^5.0.0-0"
   }
 }
