@@ -1,0 +1,28 @@
+{
+  "name": "wt-exercises",
+  "version": "1.0.0",
+  "description": "This is my first frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MPro3388/WT-Exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MPro3388/WT-Exercises/issues"
+  },
+  "homepage": "https://github.com/MPro3388/WT-Exercises#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  },
+  "dependencies": {
+    "babel-core": "^7.0.0-beta.3",
+    "babel-jest": "^27.0.0-next.8",
+    "babel-preset-env": "^7.0.0-beta.3",
+    "jest": "^27.0.0-next.8"
+  }
+}
