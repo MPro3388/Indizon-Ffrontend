@@ -26,7 +26,7 @@ export default {
   methods: {
     getProduct (product) {
       if (product.name === true) {
-        return require('../assets/male.png')
+        return require('../assets/logo.png')
       } else require('Bitte Produkt auswählen')
     }
   }
