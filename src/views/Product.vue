@@ -7,19 +7,7 @@
 </template>
 
 <script>
-import ProductList from '@/components/ProductList'
-import ProductCreateForm from '@/components/ProductCreateForm'
 export default {
-  name: 'Product',
-  components: {
-    ProductList,
-    ProductCreateForm
-  },
-  data () {
-    return {
-      product: []
-    }
-  },
   methods: {
     addProduct (productLocation) {
       const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + productLocation
@@ -34,16 +22,13 @@ export default {
     }
   },
   mounted () {
-    const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/web/product'
     const requestOptions = {
       method: 'GET',
       redirect: 'follow'
     }
-    fetch(endpoint, requestOptions)
+    fetch('http://localhost:8080/web/product', requestOptions)
       .then(response => response.json())
-      .then(result => result.forEach(product => {
-        this.product.push(product)
-      }))
+      .then(result => console.log(result))
       .catch(error => console.log('error', error))
   }
 }

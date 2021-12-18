@@ -41,7 +41,22 @@
         </label>
 
       </fieldset>
+
+      <h1>Anliegen</h1>
+      <p>Schreiben Sie ihr Anliegen</p>
+      <textarea cols="50" rows="10"></textarea>
+
+      <button type="reset">Eingaben zurücksetzen</button>
+      <button type="submit">Eingaben absenden</button>
     </form>
 
   </div>
 </template>
+<style>
+#contact{
+  position: relative;
+  left: 35%;
+  width: 500px;
+  height: 500px;
+}
+</style>
