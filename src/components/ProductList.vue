@@ -27,7 +27,7 @@ export default {
     getProduct (product) {
       if (product.name === true) {
         return require('../assets/logo.png')
-      } else require('Bitte Produkt auswählen')
+      } else require('Bitte Produkt auswählen!')
     }
   }
 }
