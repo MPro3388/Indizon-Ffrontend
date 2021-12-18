@@ -27,6 +27,7 @@ export default {
     getProduct (product) {
       if (product.name === true) {
         return require('../assets/logo.png')
+        // eslint-disable-next-line import/no-webpack-loader-syntax
       } else require('Bitte Produkt auswählen!')
     }
   }
